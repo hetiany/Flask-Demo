@@ -32,13 +32,18 @@ def login():
     return render_template("login/login.html")
 
 
-@app.route('/registration', methods=['GET'])
+@app.route('/signup', methods=['GET'])
 def registration():
-    return render_template("registration/registration.html")
+    return render_template("signup/signup.html")
 
 
 @app.route('/dashboard', methods=['GET'])
 def dashboard():
+    return render_template("dashboard/dashboard.html")
+
+
+@app.route('/dashboardchao', methods=['GET'])
+def dashboardchao():
     return render_template("success.html")
 
 

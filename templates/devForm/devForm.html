@@ -1,0 +1,266 @@
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd"> -->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+	<!-- <link rel="stylesheet" type="text/css" media="screen" href="style.php"> -->	
+	<!-- <script type="text/javascript" src="jquery-1.3.2.js"></script> -->
+	<!-- <script type="text/javascript" src="jquery.tablesorter.js"></script>
+	<script type="text/javascript" src="jquery.tablesorter.pager.js"></script> -->
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="devForm.css">
+
+<!-- 	<script type="text/javascript">
+		$(document).ready(function(){
+
+		
+		});
+	</script> -->
+
+</head>
+
+
+<body>
+
+<!-- ---------------------------   Begin Header ---------------------- -->
+<br>
+<div class="container header">
+	<div class="row">
+		<div class="col-4 headerLeft">
+			fabrinetwest
+		</div>
+
+		<div class="col-8 headerRight">
+			<!-- <p id="formVersion"> SC-PLN4-1020-03-REV.B </p> -->
+			<div class="col">SC-PLN4-1020-03-REV.B</div>
+			<div class="w-100"></div>
+    		<div class="col">DEVIATION FORM</div>
+			<!-- DEVIATION FORM -->
+		</div>
+	</div>
+	<br>
+</div>
+<!-- ----------------------------- End Header-------------------------- -->
+
+
+
+<!-- ----------------------------- Begin General Info ----------------------------->
+<div class="container generalInfo">
+	<div class="row genInfoRow">
+		<div class="col"> Customer: <input type="text" name="Customer"> </div>
+		<div class="col"> Customer Approved: 
+			<input type="checkbox" name="Customer Approved" value="Yes"> Yes
+			<input type="checkbox" name="Customer Approved" value="No"> N/A
+		</div>
+		<div class="col"> FNW Deviation #: <input type="text" name="Deviation#"></div>
+	</div>
+
+	<div class="row genInfoRow">
+		<div class="col"> Assembly #: <input type="text" name="Assembly #"> </div>
+		<div class="col"> Assembly Rev: <input type="text" name="Assembly Rev"> </div>
+		<div class="col"> Assembly Name: <input type="text" name="Assembly Name"> </div>
+	</div>
+	
+	<div class="row genInfoRow">
+		<div class="col"> WO #: <input type="text" name="WO #"> </div>
+		<div class="col"> WO Qty: <input type="text" name="WO Qty"> </div>
+		<div class="col"> Qty.Affected <input type="text" name="Qty.Affected"> </div>
+	</div>
+
+	<div class="row genInfoRow">
+		<div class="col"> Start Date: <input type="text" name="Start Date"> </div>
+		<div class="col"> Expiry Date: <input type="text" name="Expiry Date"> </div>
+		<div class="col"> Customer Dev #: <input type="text" name="Customer Dev #"> </div>
+	</div>
+	<br>
+</div>
+<!-- ----------------------------------  End General Info ------------------------------- -->
+
+
+
+<!-- ----------------------------------  Begin Dev Catetory ------------------------------ -->
+<div class="container devCategory">
+	<div class="row devCategoryRowTitle">
+		<div class="col"> Deviation Category</div>
+	</div><br>
+
+	<div class="row devCategoryRow">
+		<div class="col">
+			<input type="checkbox" name="Workmanship" value="Workmanship"> Workmanship
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Materials" value="Materials"> Materials 
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Notification" value="Notification"> Notification
+		</div>
+	</div>
+
+	<div class="row devCategoryRow">
+		<div class="col">
+			<input type="checkbox" name="Process Change" value="Process Change"> Process Change
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Quality" value="Quality"> Quality 
+		</div>
+		<div class="col">
+			Other <input type="input" name="Other">
+		</div>
+	</div>
+</div>
+<!-- ----------------------------------- End Dev Category ---------------------------- -->
+
+
+
+<!-- ----------------------------------- Begin Dev Explanation -------------------------- -->
+<div class="container devExplanation">
+	<div class="row devExplanationRowTitle">
+		<div class="col"> Deviation explanation of what/why this is in place</div>
+	</div><br>
+
+	<div class="row devExplanationTextArea">
+		<div class="col-12">
+			<textarea rows="6" cols="110"> </textarea>
+		</div>
+	</div>
+</div>
+<!-- ------------------------------------- End Dev Explanation ---------------------------->
+
+
+
+<!-- ------------------------------------ Begin Dev Area Affected ----------------------- -->
+<div class="container devAreaAffected">
+	<div class="row devAreaAffectedRowTitle">
+		<div class="col"> Deviation area(s) affected</div>
+	</div><br>
+
+	<div class="row devAreaAffectedRow">
+		<div class="col">
+			<input type="checkbox" name="Stockroom" value="Stockroom"> Stockroom
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Wave/Selective Solder" value="Wave/Selective Solder"> 
+			Wave/Selective Solder 
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Testing" value="Testing"> Testing
+		</div>
+	</div>
+
+	<div class="row devAreaAffectedRow">
+		<div class="col">
+			<input type="checkbox" name="Kitting" value="Kitting"> Kitting
+		</div>
+		<div class="col">
+			<input type="checkbox" name="2nd/3rd OPs" value="2nd/3rd OPs"> 2nd/3rd OPs 
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Final QC" value="Final QC"> Final QC
+		</div>
+	</div>
+
+	<div class="row devAreaAffectedRow">
+		<div class="col">
+			<input type="checkbox" name="Programming" value="Programming"> Programming
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Rework" value="Rework"> Rework 
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Shipping" value="Shipping"> Shipping
+		</div>
+	</div>
+
+	<div class="row devAreaAffectedRow">
+		<div class="col">
+			<input type="checkbox" name="SMT" value="SMT"> SMT
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Mechanical/Box Build" value="Mechanical/Box Build"> 
+			Mechanical/Box Build 
+		</div>
+		<div class="col">
+			Other <input type="input" name="Other">
+		</div>
+	</div>
+</div>
+<!-- -------------------------------- End Dev Area Affected -------------------------  -->
+
+
+<!-- ---------------------------------  Begin Dev Special Instructions ------------------- -->
+
+<div class="container devSpecialInstruction">
+	<div class="row devSpecialInstructionRowTitle">
+		<div class="col"> Deviation special Instructions(attach any customer instruction as required):</div>
+	</div><br>
+
+	<div class="row devSpecialInstructionRow">
+		<div class="col">
+			<input type="checkbox" name="Labeling needed" value="Labeling needed"> Labeling needed
+		</div>
+		<div class="col">
+			<input type="checkbox" name="Traceability need" value="Traceability need"> 
+			Traceability need
+		</div>
+		<div class="col">
+			Other <input type="input" name="Other">
+		</div>
+	</div>
+</div>
+<br>
+<!-- ---------------------------------  End Dev Special Instructions ------------------- -->
+
+
+
+
+
+
+<!-- -------------------------------   Begin Sign and Submit ---------------------------- -->
+<div>
+	
+</div>
+<br><br><br><br><br><br><br><br>
+<!-- -------------------------------   End Sign and Submit ---------------------------- -->
+
+
+
+
+
+
+
+
+<!-- ----------------------------------  Begin Footer --------------------------- -->
+<div class="container footer">
+	<div class="row footerRow">
+		<div class="col">
+			Fabrinet West Proprietary and Confidential
+		</div>
+		<div class="col">
+			All rights reserved
+		</div>
+		<div class="col">
+			Printed copies are Reference Only
+		</div>
+	</div>		
+</div>
+<br>
+
+<!-- ----------------------------------  End Footer --------------------------- -->
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

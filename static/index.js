@@ -11,7 +11,7 @@ function login_user() {
             if(!resp.result) {
                 alert(resp.message);
             }else{
-                window.location.replace("/dashboard");
+                window.location.replace("/dashboardchao");
             }
         },
         error: function (error) {

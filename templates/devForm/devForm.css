@@ -1,0 +1,81 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+input {
+	border: 0;
+  	outline: 0;
+  	background: transparent;
+	border-bottom: 1px solid black;
+}
+
+.container {
+	width: 80%;
+}
+
+.headerLeft {
+	border: 2px black solid;
+	text-align: center;
+	/*height: 150px;*/
+}
+
+.headerRight {
+	/*float: left;*/
+	/*display: inline-block;*/
+	/*width: 50%;*/
+	border: 2px black solid;
+	text-align: center;
+}
+
+.generalInfo {
+	/*border: 1px black solid;*/
+	/*color: red;*/
+}
+
+.genInfoRow {
+	/*border: 1px black solid;*/
+	height: 35px;	
+}
+
+.devCategoryRowTitle {
+	border: 1px black solid;
+	background: black;
+	color: white;
+}
+
+.devCategoryRow {
+	height: 35px;
+}
+
+.devExplanationRowTitle {
+	border: 1px black solid;
+	background: black;
+	color: white;
+}
+
+.devExplanationTextArea {
+	/*border: 1px black solid;*/
+	text-align: center;
+}
+
+.devAreaAffectedRowTitle {
+	border: 1px black solid;
+	background: black;
+	color: white;
+}
+
+.devAreaAffectedRow {
+	height: 35px;
+}
+
+.devSpecialInstructionRowTitle {
+	border: 1px black solid;
+	background: black;
+	color: white
+}
+
+.footerRow {
+	text-align: center;
+	border-top: 1px black solid;
+}
